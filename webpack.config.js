@@ -14,9 +14,8 @@ module.exports = {
       'toast': { import: './src/utils/toast.js',  filename: './utils/[name].js' },
     },
     output: {        
-        publicPath: '../',
         path: path.resolve(__dirname, 'dist'),        
-        filename: '[name]/[name].js',        
+        filename: '[name].js',        
         clean: true
     },
     module: {
@@ -55,22 +54,22 @@ module.exports = {
       template: path.resolve(__dirname, 'src/home/home.html'),
       filename: path.resolve(__dirname, 'dist/home/home.html'),
       useCdn: process.env.NODE_ENV === 'production',
-      chunks: ['home'],
+      chunks: ['home']
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/login/login.html'),
       filename: path.resolve(__dirname, 'dist/login/login.html'),
       useCdn: process.env.NODE_ENV === 'production',
-      chunks: ['login'],
+      chunks: ['login']
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/account/account.html'),
       filename: path.resolve(__dirname, 'dist/account/account.html'),
       useCdn: process.env.NODE_ENV === 'production',
-      chunks: ['account'],
+      chunks: ['account']
     }),
       new MiniCssExtractPlugin({
-        filename: './stylesheet/index.css'
+        filename: 'stylesheet/index.css'
       }),
       new webpack.DefinePlugin({
         'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
