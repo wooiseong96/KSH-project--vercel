@@ -1,0 +1,21 @@
+//導航欄目
+.nav-item {
+  .nav-link {
+    transition: all 0.5s ease;
+    border-bottom: 1.5px solid transparent;
+    &:hover {
+      border-bottom: 1.5px solid #ffd700;
+    }    
+  }
+}
+@media (min-width: 375px) {
+  .nav-item {
+    padding-right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .nav-item {
+    padding-right: 30px;
+  }
+}
+

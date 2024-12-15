@@ -1,0 +1,9 @@
+.footer_item li{
+  margin-bottom: 30px;
+  text-align: left;
+}
+.footer_item .bi {
+  &:before{
+    color: #FFC107;
+  }
+}

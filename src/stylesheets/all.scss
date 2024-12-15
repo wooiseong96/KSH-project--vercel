@@ -1,0 +1,30 @@
+// Required
+@import "../../node_modules//bootstrap/scss/functions";
+@import "./../stylesheets/helpers/utils/variables";
+
+// base
+@import "./helpers//base/typography";
+
+// components
+@import "./helpers/components/buttons";
+@import "./helpers/components/text";
+@import "./helpers/components/table";
+@import "./helpers/components/input";
+@import "./helpers/components/loading";
+
+// layout
+@import "./helpers/layout/header";
+@import "./helpers/layout/illustration";
+@import "./helpers/layout/footer";
+
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+@import "../../node_modules/bootstrap/scss/variables-dark";
+@import "../../node_modules/bootstrap/scss/maps";
+
+@import "./helpers/utils/utilities";
+@import "../../node_modules/bootstrap/scss/utilities";
+
+@import "../../node_modules/bootstrap/scss/bootstrap"; 
+
