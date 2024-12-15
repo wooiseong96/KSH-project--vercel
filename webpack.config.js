@@ -68,11 +68,6 @@ module.exports = {
       useCdn: process.env.NODE_ENV === 'production',
       chunks: ['account']
     }),
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'src/lala.html'),
-      filename: path.resolve(__dirname, 'dist/lala.html'),
-      useCdn: process.env.NODE_ENV === 'production',
-    }),
       new MiniCssExtractPlugin({
         filename: './stylesheet/index.css'
       }),
