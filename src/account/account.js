@@ -198,5 +198,5 @@ async function updatePassword() {
 
 // 4.1 跳轉至登入頁面
 document.querySelector('.clearToken').addEventListener('click', () => {
-  location.href = '../login/login.html'
+  location.href = 'login.html'
 })

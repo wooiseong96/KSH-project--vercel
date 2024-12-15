@@ -187,5 +187,5 @@ function renderPage(finalResult){
   const login = document.querySelector('.login_form')
   const register = document.querySelector('.register_form')
   document.querySelector('.register_btn').addEventListener('click', () => {
-  location.replace('../login/login.html?' + 'page=register')
+  location.replace('login.html?' + 'page=register')
 })

@@ -159,7 +159,7 @@ $(".register_form").on('success.form.bv', function (e) {
       if (code === 0) {
         localStorage.setItem('token', res.data.token)
         setTimeout(() => {
-          location.href = '../home/home.html'     
+          location.href = 'home.html'     
         } ,2200)   
       } else {
         setTimeout(() => {

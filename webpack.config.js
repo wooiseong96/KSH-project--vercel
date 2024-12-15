@@ -9,13 +9,13 @@ module.exports = {
       'home':  path.resolve(__dirname, 'src/home/home.js'),    
       'login': path.resolve(__dirname, 'src/login/login.js'), 
       'account': path.resolve(__dirname, 'src/account/account.js'),  
-      'auth': { import: './src/utils/auth.js', filename: './utils/[name].js' },
-      'form-serialize': { import: './src/utils/form-serialize.js',  filename: './utils/[name].js'},
-      'toast': { import: './src/utils/toast.js',  filename: './utils/[name].js' },
+      'auth': { import: './src/utils/auth.js', filename: './[name].js' },
+      'form-serialize': { import: './src/utils/form-serialize.js',  filename: './[name].js'},
+      'toast': { import: './src/utils/toast.js',  filename: './[name].js' },
     },
     output: {        
         path: path.resolve(__dirname, 'dist'),        
-        filename: '[name].js',        
+        filename: './[name].js',        
         clean: true
     },
     module: {
@@ -52,24 +52,24 @@ module.exports = {
     plugins: [
       new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/home/home.html'),
-      filename: path.resolve(__dirname, 'dist/home/home.html'),
+      filename: path.resolve(__dirname, 'dist/home.html'),
       useCdn: process.env.NODE_ENV === 'production',
       chunks: ['home']
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/login/login.html'),
-      filename: path.resolve(__dirname, 'dist/login/login.html'),
+      filename: path.resolve(__dirname, 'dist/login.html'),
       useCdn: process.env.NODE_ENV === 'production',
       chunks: ['login']
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/account/account.html'),
-      filename: path.resolve(__dirname, 'dist/account/account.html'),
+      filename: path.resolve(__dirname, 'dist/account.html'),
       useCdn: process.env.NODE_ENV === 'production',
       chunks: ['account']
     }),
       new MiniCssExtractPlugin({
-        filename: 'stylesheet/index.css'
+        filename: 'index.css'
       }),
       new webpack.DefinePlugin({
         'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
