@@ -7,6 +7,7 @@
   "dependencies": {
     "bootstrap": "^5.3.3",
     "bootstrap-fileinput": "^5.5.4",
+    "cross-env": "^7.0.3",
     "express": "^4.21.1",
     "form-serialize": "^0.7.2",
     "jq-fakeloader": "^2.0.1"
