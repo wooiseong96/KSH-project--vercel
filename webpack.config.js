@@ -4,7 +4,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const webpack = require('webpack');
 
-
 module.exports = {   
     entry: {
       'home':  path.resolve(__dirname, 'src/home/home.js'),    
