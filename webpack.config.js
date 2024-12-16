@@ -55,19 +55,19 @@ module.exports = {
       filename: path.resolve(__dirname, 'dist/home.html'),
       useCdn: process.env.NODE_ENV === 'production',
       chunks: ['home']
-    }),
-    new HtmlWebpackPlugin({
+      }),
+      new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/login/login.html'),
       filename: path.resolve(__dirname, 'dist/login.html'),
       useCdn: process.env.NODE_ENV === 'production',
       chunks: ['login']
-    }),
-    new HtmlWebpackPlugin({
+      }),
+      new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/account/account.html'),
       filename: path.resolve(__dirname, 'dist/account.html'),
       useCdn: process.env.NODE_ENV === 'production',
       chunks: ['account']
-    }),
+      }),
       new MiniCssExtractPlugin({
         filename: 'index.css'
       }),
