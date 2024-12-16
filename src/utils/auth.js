@@ -39,7 +39,7 @@ export function renderInfo(userNav,userBase64){
     const imageUrl = picConvertor(userBase64)
     personalImg.src = imageUrl
   } else {
-    personalImg.src = '/assets/default.png'
+    personalImg.src = 'https://i.ibb.co/fdwNvnS/logo.png'
   }
 }
 
