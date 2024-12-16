@@ -4,7 +4,7 @@ export function getUserInfo(){
   if (Authorization){
     async function getNav(){
       const res = await axios({
-        url: 'http://big-event-vue-api-t.itheima.net/my/userinfo',
+        url: 'https://big-event-vue-api-t.itheima.net/my/userinfo',
         method: 'GET',
         headers: {
            Authorization
@@ -68,7 +68,7 @@ function getUserImg(){
   const changeImg = document.querySelector('.changeImg')
   async function getNav(){
     const res = await axios({
-      url: 'http://big-event-vue-api-t.itheima.net/my/userinfo',
+      url: 'https://big-event-vue-api-t.itheima.net/my/userinfo',
       method: 'GET',
       headers: {
          Authorization

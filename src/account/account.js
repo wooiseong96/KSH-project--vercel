@@ -16,7 +16,7 @@ function getUserImg(){
   const Authorization = localStorage.getItem('token')
   async function getImg(){
     const res = await axios({
-      url: 'http://big-event-vue-api-t.itheima.net/my/userinfo',
+      url: 'https://big-event-vue-api-t.itheima.net/my/userinfo',
       method: 'GET',
       headers: {
          Authorization
@@ -71,7 +71,7 @@ function uploadDecodedImg(avatar){
     const Authorization = localStorage.getItem('token')
     try {
       const res = await axios({
-      url: 'http://big-event-vue-api-t.itheima.net/my/update/avatar',
+      url: 'https://big-event-vue-api-t.itheima.net/my/update/avatar',
       method: 'patch',
       headers: {
         Authorization
@@ -174,7 +174,7 @@ async function updatePassword() {
   const pwdData=  serialize(pwdForm, { hash: true, empty: true})
   try {
     const res = await axios({
-    url: 'http://big-event-vue-api-t.itheima.net/my/updatepwd',
+    url: 'https://big-event-vue-api-t.itheima.net/my/updatepwd',
     method: 'patch',
     headers: {
       Authorization

@@ -145,7 +145,7 @@ $(".register_form").on('success.form.bv', function (e) {
     const loginData =  serialize(login, { hash: true, empty: true})
     try{
       const res = await axios({
-        url: 'http://big-event-vue-api-t.itheima.net/api/login',
+        url: 'https://big-event-vue-api-t.itheima.net/api/login',
         method: 'post',
         data: {
           username: loginData.username,
@@ -181,7 +181,7 @@ async function registerRender (){
   try{
     const res = await 
     axios({
-      url: 'http://big-event-vue-api-t.itheima.net/api/reg',
+      url: 'https://big-event-vue-api-t.itheima.net/api/reg',
       method: 'post',
       data: {
         username: registerData.username,
