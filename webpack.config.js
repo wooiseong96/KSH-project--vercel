@@ -9,13 +9,13 @@ module.exports = {
       'home':  path.resolve(__dirname, 'src/home/home.js'),    
       'login': path.resolve(__dirname, 'src/login/login.js'), 
       'account': path.resolve(__dirname, 'src/account/account.js'),  
-      'auth': { import: './src/utils/auth.js', filename: './[name].js' },
-      'form-serialize': { import: './src/utils/form-serialize.js',  filename: './[name].js'},
-      'toast': { import: './src/utils/toast.js',  filename: './[name].js' },
+      'auth': { import: './src/utils/auth.js', filename: '[name].js' },
+      'form-serialize': { import: './src/utils/form-serialize.js',  filename: '[name].js'},
+      'toast': { import: './src/utils/toast.js',  filename: '[name].js' },
     },
     output: {        
         path: path.resolve(__dirname, 'dist'),        
-        filename: './[name].js',        
+        filename: '[name].js',        
         clean: true
     },
     module: {
