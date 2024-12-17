@@ -38,8 +38,9 @@ const formImg = document.querySelector('.formImg')
 const removeImg = document.querySelector('.removeImg')
 const uploadImg = document.querySelector('.uploadImg')
 const input = ''
-
 formImg.addEventListener('change', (input) => {
+  formImg.disabled = true
+  formImg.style.opacity = 0.3
   renderImg(input)
 })
 
@@ -62,7 +63,10 @@ removeImg.addEventListener('click', () => {
   formImg.value = ''
   changeImg.src = ''
   changeImg.classList.add('invisible')
-  toastMessage('預覽頭像移除成功', 0)
+  toastMessage('移除頭像成功', 0)
+  document.addEventListener('hide.bs.toast', () => {
+    location.reload()
+  })
 })
 
 // 2.4 上傳頭像至後臺
